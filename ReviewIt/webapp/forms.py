@@ -16,6 +16,7 @@ def handle_uploaded_file(f):
 		path_name='/media/mayur/2ef007f3-505d-4f8d-98f8-efe8bfc991c5/ReviewIt/ReviewIt/webapp/media/'+str(file_end)
 		if directory_existence_check==False:
 			os.mkdir(path_name)
+			os.mkdir(path_name+'/frame_data')
 			break
 
 	with open(path_name+'/'+str(file_end),'wb+') as destination:
