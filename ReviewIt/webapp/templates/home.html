@@ -6,9 +6,9 @@
 </head>
 
 <body>
-
-<form method="POST" enctype="multipart/form-data"> {%csrf_token%}
 <div align="center">
+<form method="POST" enctype="multipart/form-data"> {%csrf_token%}
+
 <!--<label for="file">File </label>-->
 <input id="file" type="file" name="file"/>
 </div>
@@ -16,8 +16,12 @@
 <div align="center">
 <!-- {{ form.as_p }}-->
 <input type="submit" value="Upload!!"/>
-</div>	
+	
 </form>
 
+<form method="GET" action = "{% url 'yolo' %}" >
+   <input type="submit" value="Object Detection" name="yolo">
+</form>
+</div>
 </body>
 </html>
