@@ -18,10 +18,14 @@
 <input type="submit" value="Upload!!"/>
 	
 </form>
-
+<form method="GET" action = "{% url 'super_res' %}" >
+   <input type="submit" value="Super Resolution" name="super_res">
+</form>
 <form method="GET" action = "{% url 'yolo' %}" >
    <input type="submit" value="Object Detection" name="yolo">
 </form>
+
+
 </div>
 </body>
 </html>

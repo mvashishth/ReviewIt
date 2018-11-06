@@ -22,8 +22,11 @@ def upload_file(request):
 	return render(request, 'home.html', {'form': form})
 
 
+def super_res(request):
+	return HttpResponse('Super_Res')
 
 
 def yolo(request):
 	output_evaluation()
-	return HttpResponse('FuckThat')
+	return HttpResponse('Yolo')
+
